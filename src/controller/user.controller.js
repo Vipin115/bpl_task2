@@ -3,8 +3,6 @@ const User = require("../model/user.model");
 
 const router = express.Router();
 
-
-
 router.post("", async (req, res)=>{
     try {
         const userData = await User.create({
